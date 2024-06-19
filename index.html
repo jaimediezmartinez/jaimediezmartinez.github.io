@@ -1,14 +1,246 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaime Díez Martínez</title>
-    <link rel="shortcut icon" href="img/icons8-código-67.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
- <body>
+<body>
+    <div class="contenedor">
+        <h1>Lorem ipsum</h1>
+        <img src="spider-man-2099-oscuro_1920x1080_xtrafondos.com.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quidem distinctio rerum, fugiat adipisci porro vero debitis ipsam ratione quis excepturi quia maxime totam officiis? Voluptatum amet totam officiis adipisci!</p>
+    </div> 
+        <button class="btncv animacion-boton">Cv</button>
+    <div class="contenedor">
+        <h1>Lorem ipsum</h1>
+        <img src="spider-man-2099-oscuro_1920x1080_xtrafondos.com.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quidem distinctio rerum, fugiat adipisci porro vero debitis ipsam ratione quis excepturi quia maxime totam officiis? Voluptatum amet totam officiis adipisci!</p>
+    </div> 
+    <div class="contenedor">
+        <h1>Lorem ipsum</h1>
+        <img src="spider-man-2099-oscuro_1920x1080_xtrafondos.com.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quidem distinctio rerum, fugiat adipisci porro vero debitis ipsam ratione quis excepturi quia maxime totam officiis? Voluptatum amet totam officiis adipisci!</p>
+    </div> 
+    <div class="contenedor">
+        <h1>Lorem ipsum</h1>
+        <img src="spider-man-2099-oscuro_1920x1080_xtrafondos.com.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quidem distinctio rerum, fugiat adipisci porro vero debitis ipsam ratione quis excepturi quia maxime totam officiis? Voluptatum amet totam officiis adipisci!</p>
+    </div> 
+    <div class="contenedor">
+        <h1>Lorem ipsum</h1>
+        <img src="spider-man-2099-oscuro_1920x1080_xtrafondos.com.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quidem distinctio rerum, fugiat adipisci porro vero debitis ipsam ratione quis excepturi quia maxime totam officiis? Voluptatum amet totam officiis adipisci!</p>
+    </div> 
+    <div class="contenedor">
+        <h1>Lorem ipsum</h1>
+        <img src="spider-man-2099-oscuro_1920x1080_xtrafondos.com.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quidem distinctio rerum, fugiat adipisci porro vero debitis ipsam ratione quis excepturi quia maxime totam officiis? Voluptatum amet totam officiis adipisci!</p>
+    </div> 
+
+    
+    <div class="code-container">
+        <h1 class="titlebox">Proyecto Marvel</h1>
+        <div class="buttons">
+            <button class="btn" data-target="html">HTML</button>
+            <button class="btn" data-target="css">CSS</button>
+            <button class="btn" data-target="js">JavaScript</button>
+        </div>
+        <div class="code-display">
+            <pre id="html" class="code-block hidden">
+-- Código HTML aquí --
+!DOCTYPE html
+html lang="es"
+head
+    meta charset="UTF-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    titlePersonajes de Marvel/title
+    link rel="stylesheet" href="styles.css"
+/head
+body
+    header
+        h1Personajes de Marvel/h1
+        nav
+            ul
+                lia href="#inicio"Inicio/a/li
+                lia href="#personajes"Personajes/a/li
+                lia href="#comics"Comics/a/li
+                lia href="#peliculas"Películas/a/li
+                lia href="#favoritos"Favoritos/a/li
+            /ul
+        /nav
+        div class="search-bar"
+            input type="text" id="search" placeholder="Buscar personaje..."
+        /div
+    /header
+
+    section id="inicio"
+        div class="banner"
+            h2Bienvenido al Universo Marvel/h2
+        /div
+    /section
+
+    section id="personajes"
+        h2Personajes/h2
+        div class="character-grid" id="characterGrid"
+            !-- Aquí se cargarán los personajes --
+        /div
+    /section
+
+    footer
+        p&copy; 2024 Marvel Fan Page. Todos los derechos reservados./p
+    /footer
+
+    script src="scripts.js"/script
+/body
+/html
+            </pre>
+            <pre id="css" class="code-block hidden">
+/* Código CSS aquí */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #202020;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.search-bar {
+    margin-top: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h2 {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.character-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.character-card {
+    background-color: #333333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.character-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+            </pre>
+            <pre id="js" class="code-block hidden">
+// Código JavaScript aquí
+document.addEventListener('DOMContentLoaded', function() {
+    const characterGrid = document.getElementById('characterGrid');
+    const searchInput = document.getElementById('search');
+
+    // Función para obtener personajes de la API de Marvel
+    function fetchCharacters(query = '') {
+        const apiKey = 'TU_API_KEY_DE_MARVEL';
+        const baseUrl = `https://gateway.marvel.com/v1/public/characters?apikey=${apiKey}&nameStartsWith=${query}`;
+
+        fetch(baseUrl)
+            .then(response => response.json())
+            .then(data => {
+                displayCharacters(data.data.results);
+            })
+            .catch(error => console.error('Error al obtener los personajes:', error));
+    }
+
+    // Función para mostrar los personajes en la página
+    function displayCharacters(characters) {
+        characterGrid.innerHTML = '';
+        characters.forEach(character => {
+            const characterCard = document.createElement('div');
+            characterCard.className = 'character-card';
+            characterCard.innerHTML = `
+                <img src="${character.thumbnail.path}.${character.thumbnail.extension}" alt="${character.name}">
+                <h3>${character.name}</h3>
+            `;
+            characterGrid.appendChild(characterCard);
+        });
+    }
+
+    // Evento de búsqueda
+    searchInput.addEventListener('input', function() {
+        fetchCharacters(searchInput.value);
+    });
+
+    // Obtener y mostrar personajes al cargar la página
+    fetchCharacters();
+});
+            </pre>
+        </div>
+    </div>
+
     <script src="scripts.js"></script>
 </body>
 </html>

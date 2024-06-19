@@ -1,3 +1,4 @@
+//  Mostrar u ocultar codigo a traves de un boton
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.btn');
     const codeBlocks = document.querySelectorAll('.code-block');

@@ -19,3 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+//  Abrir PDF
+function openPDF() {
+    window.open('cv.pdf', '_blank');
+}

@@ -22,28 +22,25 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="" onclick="scrollToSection(event, 'header')">Inicio</a>
+                        <a class="nav-link" href="#home">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="" onclick="scrollToSection(event, 'features')">Funciones</a>
+                        <a class="nav-link" href="#features">Funciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="" onclick="scrollToSection(event, 'erp')">ERP</a>
+                        <a class="nav-link" href="#erp">ERP</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="" onclick="scrollToSection(event, 'pricing')">Tarifas</a>
+                        <a class="nav-link" href="#pricing">Tarifas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="" onclick="scrollToSection(event, 'contact')">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-primary text-dark shadow-none ml-md-4" href="#">Empezar</a>
+                        <a class="nav-link" href="#contact">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header class="header d-flex justify-content-center" id="header">
+    <header class="header d-flex justify-content-center" id="home">
         <video autoplay muted loop id="video-background">
             <source src="assets/imgs/video.mp4" type="video/mp4">
             Tu navegador no soporta el video en HTML5.
@@ -55,27 +52,43 @@
                         <h3 class="header-title"><strong class="text-primary">ERP</strong><span>SENCILLO</span></h3>
                         <h4 class="header-subtitle">El ERP que Revolucionará tu Negocio </h4>
                         <p>Descubre cómo nuestro ERP integrado puede transformar tu negocio, optimizando cada proceso y brindándote una visión completa para tomar decisiones informadas y estratégicas.</p>
-                        <button class="btn btn-outline-light btn-flat">Descargar</button>
                     </div>  
                 </div>
-                <div class="col-md-5 d-none d-md-block">
-                    <form class="header-form">
-                        <div class="head">Probar <span class="text-primary">Gratis</span> ahora.</div>
-                        <div class="body">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Nombre">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" placeholder="Contraseña">
-                            </div>
+                <div class="col-md-5 d-none d-md-block"><style>
+                    .header-form {
+                        border-radius: 10px; /* Redondea los bordes del formulario */
+                        border: 1px solid #ccc; /* Añade un borde al formulario */
+                        padding: 20px; /* Espacio interno del formulario */
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra para destacar el formulario */
+                    }
+                
+                    .header-form .form-control {
+                        border-radius: 5px; /* Redondea los bordes de los campos de entrada */
+                    }
+                
+                    .header-form .btn {
+                        border-radius: 5px; /* Redondea los bordes del botón */
+                    }
+                </style>
+                
+                <form class="header-form">
+                    <div class="head">Probar <span class="text-primary">Gratis</span> ahora.</div>
+                    <div class="body">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nombre">
                         </div>
-                        <div class="footer">
-                            <button class="btn btn-primary btn-block">Empezar</button>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
                         </div>
-                    </form> 
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Contraseña">
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <button class="btn btn-primary btn-block">Empezar</button>
+                    </div>
+                </form>
+                
                 </div>
             </div>  
         </div>
@@ -83,7 +96,7 @@
     <section class="section" id="features">
         <div class="container">
             <div class="container text-center">
-                <h5 class="display-4 has-line"><strong>Funcionalidades de <span class="text-primary">ERP</span>SENCILLO</strong></h5><br>
+                <h6 class="display-4 has-line"><strong>Funcionalidades de <strong class="text-primary">ERP</strong><span class="">SENCILLO</span></strong></h6><br>
             </div>
             <div class="row justify-content-between funciones">
                 <div class="col-md-6 col-lg-5">
@@ -154,10 +167,10 @@
         </div>
     </section>
     <section></section>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg1"><path fill="#16191B" fill-opacity="1" d="M0,256L80,240C160,224,320,192,480,197.3C640,203,800,245,960,250.7C1120,256,1280,224,1360,208L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg1"><path fill="#0A121D" fill-opacity="1" d="M0,256L80,240C160,224,320,192,480,197.3C640,203,800,245,960,250.7C1120,256,1280,224,1360,208L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
     <section class="section section2" id="erp">
         <div class="container text-center">
-            <h5 class="display-3 has-line"><strong>¿Por qué usar <strong class="text-primary">ERP</strong>Sencillo?</strong></h5>
+            <h6 class="display-3 has-line"><strong>¿Por qué usar <strong class="text-primary">ERP</strong>Sencillo?</strong></h6>
             <p class="mb-5 pb-4">Transforma radicalmente la manera en la que tu empresa opera, aportando numerosas ventajas que optimizan tus procesos.</p>
 
             <div class="row">
@@ -179,7 +192,7 @@
             </div>
         </div>
     </section>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg2"><path fill="#16191B" fill-opacity="1" d="M0,256L80,240C160,224,320,192,480,197.3C640,203,800,245,960,250.7C1120,256,1280,224,1360,208L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>    <section class="section" id="pricing">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg2"><path fill="#0A121D" fill-opacity="1" d="M0,256L80,240C160,224,320,192,480,197.3C640,203,800,245,960,250.7C1120,256,1280,224,1360,208L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>    <section class="section" id="pricing">
         <div class="container text-center">
             <h6 class="display-4 has-line"><strong>Planes que se adaptan a tu negocio</strong></h6>
             <p class="mb-5 pb-4">Planes flexibles para cualquier tamaño de empresa, encuentra la solución perfecta que se ajuste a tus necesidades y presupuesto.</p>
@@ -240,20 +253,16 @@
         </div>
     </section>
     <section class="section has-img-bg text-center">
-        <video autoplay muted loop id="video-background">
-            <source src="assets/imgs/video.mp4" type="video/mp4">
-            Tu navegador no soporta el video en HTML5.
-        </video>
         <div class="container">
-            <span class="display-3 has-line"><strong>Sobre <span class="text-primary">Nosotros</span></strong></span>
-            <span class="mb-5 font-weight-light">Somos una consultora que nos dedicamos al desarrollo de soluciones ERP y tecnologías de la información, 
+            <h6 class="display-3 has-line"><strong>Sobre <span class="text-primary">Nosotros</span></strong></h6>
+            <h5 class="mb-5 font-weight-light">Somos una consultora que nos dedicamos al desarrollo de soluciones ERP y tecnologías de la información, 
                 comprometida con la excelencia y la innovación. Especializados en Informática, Seguridad Informática y Comunicaciones, 
-                nuestro principal objetivo es impulsar el éxito de nuestros clientes mediante soluciones tecnológicas avanzadas y servicios de consultoría especializada.</span>
+                nuestro principal objetivo es impulsar el éxito de nuestros clientes mediante soluciones tecnológicas avanzadas y servicios de consultoría especializada.</h5>
         </div>
     </section>
     <section class="section" id="contact">
         <div class="container text-center">
-            <span class="display-4 has-line"><strong>CONTACTO</strong></span>
+            <h6 class="display-4 has-line"><strong>CONTACTO</strong></h6>
             <p class="mb-5 pb-2">Ponte en contacto con nosotros hoy mismo para contratar nuestros servicios o consultar cualquier duda sobre cómo nuestro ERP puede transformar tu negocio.</p>
 
             <form>
@@ -277,7 +286,7 @@
             </form>
         </div>
     </section>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#16191B" fill-opacity="1" d="M0,256L80,240C160,224,320,192,480,197.3C640,203,800,245,960,250.7C1120,256,1280,224,1360,208L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0A121D" fill-opacity="1" d="M0,256L80,240C160,224,320,192,480,197.3C640,203,800,245,960,250.7C1120,256,1280,224,1360,208L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
     <footer class="footer py-4 bg-dark text-light"> 
         <div class="container text-center">
             <p class="mb-4 small">Copyright &copy; <script>document.write(new Date().getFullYear())</script></p>

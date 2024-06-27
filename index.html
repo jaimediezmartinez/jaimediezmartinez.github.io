@@ -1,247 +1,289 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Devcrud">
+    <title>ERP Sencillo</title>
+    <meta name="description" content="Descubre ERP Simple, la solución integral para la gestión empresarial. Optimiza procesos, mejora la productividad y toma decisiones informadas con nuestro sistema ERP. ¡Conoce más ahora!">
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-    <div class="contenedor">
-        <h1>Lorem ipsum</h1>
-        <img src="spider-man-2099-oscuro_1920x1080_xtrafondos.com.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quidem distinctio rerum, fugiat adipisci porro vero debitis ipsam ratione quis excepturi quia maxime totam officiis? Voluptatum amet totam officiis adipisci!</p>
-    </div> 
-        <button class="btncv animacion-boton">Cv</button>
-        <button class="button" onclick="openPDF()">Abrir PDF</button>
-    <div class="contenedor">
-        <h1>Lorem ipsum</h1>
-        <img src="spider-man-2099-oscuro_1920x1080_xtrafondos.com.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quidem distinctio rerum, fugiat adipisci porro vero debitis ipsam ratione quis excepturi quia maxime totam officiis? Voluptatum amet totam officiis adipisci!</p>
-    </div> 
-    <div class="contenedor">
-        <h1>Lorem ipsum</h1>
-        <img src="spider-man-2099-oscuro_1920x1080_xtrafondos.com.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quidem distinctio rerum, fugiat adipisci porro vero debitis ipsam ratione quis excepturi quia maxime totam officiis? Voluptatum amet totam officiis adipisci!</p>
-    </div> 
-    <div class="contenedor">
-        <h1>Lorem ipsum</h1>
-        <img src="spider-man-2099-oscuro_1920x1080_xtrafondos.com.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quidem distinctio rerum, fugiat adipisci porro vero debitis ipsam ratione quis excepturi quia maxime totam officiis? Voluptatum amet totam officiis adipisci!</p>
-    </div> 
-    <div class="contenedor">
-        <h1>Lorem ipsum</h1>
-        <img src="spider-man-2099-oscuro_1920x1080_xtrafondos.com.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quidem distinctio rerum, fugiat adipisci porro vero debitis ipsam ratione quis excepturi quia maxime totam officiis? Voluptatum amet totam officiis adipisci!</p>
-    </div> 
-    <div class="contenedor">
-        <h1>Lorem ipsum</h1>
-        <img src="spider-man-2099-oscuro_1920x1080_xtrafondos.com.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quidem distinctio rerum, fugiat adipisci porro vero debitis ipsam ratione quis excepturi quia maxime totam officiis? Voluptatum amet totam officiis adipisci!</p>
-    </div> 
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-    
-    <div class="code-container">
-        <h1 class="titlebox">Proyecto Marvel</h1>
-        <div class="buttons">
-            <button class="btn" data-target="html">HTML</button>
-            <button class="btn" data-target="css">CSS</button>
-            <button class="btn" data-target="js">JavaScript</button>
+    <nav id="scrollspy" class="navbar page-navbar navbar-dark navbar-expand-md fixed-top" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong class="text-primary">ERP</strong><span class="text-light">SENCILLO</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#header">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Funciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#erp">ERP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Tarifas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-dark shadow-none ml-md-4" href="#">Empezar</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="code-display">
-            <pre id="html" class="code-block hidden">
--- Código HTML aquí --
-!DOCTYPE html
-html lang="es"
-head
-    meta charset="UTF-8"
-    meta name="viewport" content="width=device-width, initial-scale=1.0"
-    titlePersonajes de Marvel/title
-    link rel="stylesheet" href="styles.css"
-/head
-body
-    header
-        h1Personajes de Marvel/h1
-        nav
-            ul
-                lia href="#inicio"Inicio/a/li
-                lia href="#personajes"Personajes/a/li
-                lia href="#comics"Comics/a/li
-                lia href="#peliculas"Películas/a/li
-                lia href="#favoritos"Favoritos/a/li
-            /ul
-        /nav
-        div class="search-bar"
-            input type="text" id="search" placeholder="Buscar personaje..."
-        /div
-    /header
-
-    section id="inicio"
-        div class="banner"
-            h2Bienvenido al Universo Marvel/h2
-        /div
-    /section
-
-    section id="personajes"
-        h2Personajes/h2
-        div class="character-grid" id="characterGrid"
-            !-- Aquí se cargarán los personajes --
-        /div
-    /section
-
-    footer
-        p&copy; 2024 Marvel Fan Page. Todos los derechos reservados./p
-    /footer
-
-    script src="scripts.js"/script
-/body
-/html
-            </pre>
-            <pre id="css" class="code-block hidden">
-/* Código CSS aquí */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #202020;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #000000;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-header h1 {
-    margin: 0;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-header nav ul li {
-    display: inline;
-}
-
-header nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.search-bar {
-    margin-top: 10px;
-}
-
-.search-bar input {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    width: 200px;
-}
-
-section {
-    padding: 60px 20px;
-}
-
-.banner {
-    background-image: url('banner.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner h2 {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.character-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.character-card {
-    background-color: #333333;
-    border-radius: 10px;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-}
-
-.character-card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-footer {
-    background-color: #000000;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-            </pre>
-            <pre id="js" class="code-block hidden">
-// Código JavaScript aquí
-document.addEventListener('DOMContentLoaded', function() {
-    const characterGrid = document.getElementById('characterGrid');
-    const searchInput = document.getElementById('search');
-
-    // Función para obtener personajes de la API de Marvel
-    function fetchCharacters(query = '') {
-        const apiKey = 'TU_API_KEY_DE_MARVEL';
-        const baseUrl = `https://gateway.marvel.com/v1/public/characters?apikey=${apiKey}&nameStartsWith=${query}`;
-
-        fetch(baseUrl)
-            .then(response => response.json())
-            .then(data => {
-                displayCharacters(data.data.results);
-            })
-            .catch(error => console.error('Error al obtener los personajes:', error));
-    }
-
-    // Función para mostrar los personajes en la página
-    function displayCharacters(characters) {
-        characterGrid.innerHTML = '';
-        characters.forEach(character => {
-            const characterCard = document.createElement('div');
-            characterCard.className = 'character-card';
-            characterCard.innerHTML = `
-                <img src="${character.thumbnail.path}.${character.thumbnail.extension}" alt="${character.name}">
-                <h3>${character.name}</h3>
-            `;
-            characterGrid.appendChild(characterCard);
-        });
-    }
-
-    // Evento de búsqueda
-    searchInput.addEventListener('input', function() {
-        fetchCharacters(searchInput.value);
-    });
-
-    // Obtener y mostrar personajes al cargar la página
-    fetchCharacters();
-});
-            </pre>
+    </nav>
+    <header class="header d-flex justify-content-center" id="header">
+        <div class="container">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-7">
+                    <div class="header-content">
+                        <h3 class="header-title"><strong class="text-primary">ERP</strong><span>SENCILLO</span></h3>
+                        <h4 class="header-subtitle">El ERP que Revolucionará tu Negocio </h4>
+                        <p>Descubre cómo nuestro ERP integrado puede transformar tu negocio, optimizando cada proceso y brindándote una visión completa para tomar decisiones informadas y estratégicas.</p>
+                        <button class="btn btn-outline-light btn-flat">Descargar</button>
+                    </div>  
+                </div>
+                <div class="col-md-5 d-none d-md-block">
+                    <form class="header-form">
+                        <div class="head">Probar <span class="text-primary">Gratis</span> ahora.</div>
+                        <div class="body">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Nombre">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Contraseña">
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <button class="btn btn-primary btn-block">Empezar</button>
+                        </div>
+                    </form> 
+                </div>
+            </div>  
         </div>
-    </div>
+    </header>
+    <section class="section" id="features">
+        <div class="container">
+            <div class="container text-center">
+                <h6 class="display-4 has-line"><strong>Funcionalidades de <strong class="text-primary">ERP</strong><span class="">SENCILLO</span></strong></h6><br>
+            </div>
+            <div class="row justify-content-between funciones">
+                <div class="col-md-6 col-lg-5">
+                    <ul class="list-unstyled mt-4">
+                        <li class="media">
+                            <div class="circle-40 mr-3 mt-1"><span class="material-symbols-outlined">attach_money</span></div>
+                            <div class="media-body">
+                                <h6 class="mb-2">Gestión Financiera</h6>
+                                <p>Incluye contabilidad, gestión de activos, cuentas por pagar y por cobrar, presupuestos y análisis financiero.</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="circle-40 mr-3 mt-1"><span class="material-symbols-outlined">accessibility_new</span></div>
+                            <div class="media-body">
+                                <h6 class="mb-2">Gestión de Recursos Humanos</h6>
+                                <p>Maneja la nómina, el seguimiento de empleados, la gestión del tiempo y la asistencia, así como el desarrollo y la capacitación del personal.</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="circle-40 mr-3 mt-1"><span class="material-symbols-outlined">inventory</span></div>
+                            <div class="media-body">
+                                <h6 class="mb-2">Gestión de la Cadena de Suministro</h6>
+                                <p>Aborda la planificación de la demanda, la adquisición de materiales, la gestión de inventarios, la logística y la distribución.</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="circle-40 mr-3 mt-1"><span class="material-symbols-outlined">planner_banner_ad_pt</span></div>
+                            <div class="media-body">
+                                <h6 class="mb-2">Gestión de la Producción</h6>
+                                <p>Permite la planificación y control de la producción, la gestión de órdenes de trabajo y la supervisión del ciclo de vida del producto.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <ul class="list-unstyled mt-4">
+                        <li class="media">
+                            <div class="circle-40 mr-3 mt-1"><span class="material-symbols-outlined">cases</span></div>
+                            <div class="media-body">
+                                <h6 class="mb-2">Gestión de Ventas y Marketing</h6>
+                                <p>Incluye la gestión de pedidos, la facturación, la gestión de relaciones con los clientes (CRM) y el análisis de ventas.</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="circle-40 mr-3 mt-1"><span class="material-symbols-outlined">tactic</span></div>
+                            <div class="media-body">
+                                <h6 class="mb-2">Gestión de Proyectos</h6>
+                                <p>Facilita la planificación, ejecución y supervisión de proyectos, con seguimiento de tiempos y recursos involucrados.</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="circle-40 mr-3 mt-1"><span class="material-symbols-outlined">psychology</span></div>
+                            <div class="media-body">
+                                <h6 class="mb-2">Inteligencia de Negocios</h6>
+                                <p>Proporciona herramientas de análisis y reportes para la toma de decisiones basadas en datos, incluyendo dashboards y KPIs.</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="circle-40 mr-3 mt-1"><span class="material-symbols-outlined">handshake</span></div>
+                            <div class="media-body">
+                                <h6 class="mb-2">Gestión de la Relación con el Cliente (CRM)</h6>
+                                <p>Ayuda a manejar las interacciones con clientes actuales y potenciales, mejorando la satisfacción y fidelización del cliente.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section></section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg1"><path fill="#16191B" fill-opacity="1" d="M0,256L80,240C160,224,320,192,480,197.3C640,203,800,245,960,250.7C1120,256,1280,224,1360,208L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+    <section class="section section2" id="erp">
+        <div class="container text-center">
+            <h6 class="display-3 has-line"><strong>¿Por qué usar <strong class="text-primary">ERP</strong>Sencillo?</strong></h6>
+            <p class="mb-5 pb-4">Transforma radicalmente la manera en la que tu empresa opera, aportando numerosas ventajas que optimizan tus procesos.</p>
 
-    <script src="scripts.js"></script>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="circle-100 mb-3"><span class="material-symbols-outlined">memory</span></div>
+                    <h6 class="title mb-3">Integración de Procesos</h6>
+                    <p>Integra todos los procesos de negocio en un único sistema. Permite que la información fluya entre las distintas áreas de la empresa, mejorando la eficiencia y reduciendo errores.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="circle-100 mb-3"><span class="material-symbols-outlined">guardian</span></div>
+                    <h6 class="title mb-3">Visibilidad y Control</h6>
+                    <p>Proporciona una visión global de todas las operaciones en tiempo real, lo que facilita la toma de decisiones informadas y el control de los recursos.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="circle-100 mb-3"><span class="material-symbols-outlined">monitoring</span></div>
+                    <h6 class="title mb-3">Mejora de la Productividad</h6>
+                    <p>Al automatizar tareas rutinarias y centralizar la información, se reduce el tiempo dedicado a procesos manuales y se mejora la productividad del personal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg2"><path fill="#16191B" fill-opacity="1" d="M0,256L80,240C160,224,320,192,480,197.3C640,203,800,245,960,250.7C1120,256,1280,224,1360,208L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>    <section class="section" id="pricing">
+        <div class="container text-center">
+            <h6 class="display-4 has-line"><strong>Planes que se adaptan a tu negocio</strong></h6>
+            <p class="mb-5 pb-4">Planes flexibles para cualquier tamaño de empresa, encuentra la solución perfecta que se ajuste a tus necesidades y presupuesto.</p>
+            <div class="row pt-5">
+                <div class="col-lg-4">
+                    <a href="javascript:void(0)" class="pricing-card">
+                        <div class="head">Básico</div>
+                        <div class="body">
+                            <h1>0<small>€</small></h1>
+                            <p>Gratuito</p>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item">1 GB OF SPACE</li>
+                            <li class="list-group-item">10 GB OF BANDWIDTH</li>
+                            <li class="list-group-item">3 WEBSITES</li>
+                            <li class="list-group-item">BASIC CUSTOMIZATION</li>
+                            <li class="list-group-item">WORDPRESS INTEGRATION</li>
+                            <li class="list-group-item">EMAIL SUPPORT</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="javascript:void(0)" class="pricing-card popular">
+                        <div class="head">Profesional</div>
+                        <div class="body">
+                            <h1>14,99<small>€</small></h1>
+                            <p>Pago mensual</p>
+                        </div>
+                        <div class="popular-item">MÁS POPULAR</div>
+                        <ul class="list-group">
+                            <li class="list-group-item">5 GB OF SPACE</li>
+                            <li class="list-group-item">50 GB OF BANDWIDTH</li>
+                            <li class="list-group-item">10 WEBSITES</li>
+                            <li class="list-group-item">ADVANCED CUSTOMIZATION</li>
+                            <li class="list-group-item">WORDPRESS INTEGRATION</li>
+                            <li class="list-group-item">EMAIL SUPPORT</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="javascript:void(0)" class="pricing-card">
+                        <div class="head">Empresarial</div>
+                        <div class="body">
+                            <h1>99<small>€</small></h1>
+                            <p>Pago mensual</p>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item">UNLIMITED OF SPACE</li>
+                            <li class="list-group-item">UNLIMITED BANDWIDTH</li>
+                            <li class="list-group-item">120 WEBSITES</li>
+                            <li class="list-group-item">ADVANCED CUSTOMIZATION</li>
+                            <li class="list-group-item">WORDPRESS INTEGRATION</li>
+                            <li class="list-group-item">EMAIL SUPPORT</li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section has-img-bg text-center">
+        <div class="container">
+            <h6 class="display-3 has-line"><strong>Sobre <span class="text-primary">Nosotros</span></strong></h6>
+            <h5 class="mb-5 font-weight-light">Somos una consultora que nos dedicamos al desarrollo de soluciones ERP y tecnologías de la información, 
+                comprometida con la excelencia y la innovación. Especializados en Informática, Seguridad Informática y Comunicaciones, 
+                nuestro principal objetivo es impulsar el éxito de nuestros clientes mediante soluciones tecnológicas avanzadas y servicios de consultoría especializada.</h5>
+            <button class="btn btn-outline-light btn-flat">Descargar</button>
+        </div>
+    </section>
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <h6 class="display-4 has-line"><strong>CONTACTO</strong></h6>
+            <p class="mb-5 pb-2">Ponte en contacto con nosotros hoy mismo para contratar nuestros servicios o consultar cualquier duda sobre cómo nuestro ERP puede transformar tu negocio.</p>
+
+            <form>
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="form-group pb-1">
+                            <input type="text" class="form-control" required placeholder="Nombre">            
+                        </div>
+                        <div class="form-group pb-1">
+                            <input type="email" class="form-control" required placeholder="Email">          
+                        </div>
+                        <div class="form-group ">
+                            <input type="text" class="form-control" placeholder="Asunto">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <textarea name="" id="" cols="" rows="7" class="form-control" required placeholder="Mensaje"></textarea>
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-primary btn-block" value="Enviar">
+            </form>
+        </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#16191B" fill-opacity="1" d="M0,256L80,240C160,224,320,192,480,197.3C640,203,800,245,960,250.7C1120,256,1280,224,1360,208L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+    <footer class="footer py-4 bg-dark text-light"> 
+        <div class="container text-center">
+            <p class="mb-4 small">Copyright &copy; <script>document.write(new Date().getFullYear())</script></p>
+            <div class="social-links">
+                <a href="javascript:void(0)" class="link"><i class="">Términos y Condiciones</i></a>
+                <a href="javascript:void(0)" class="link"><i class="">Aviso legal y protección de datos</i></a>
+            </div>
+        </div>
+    </footer>
+	
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>

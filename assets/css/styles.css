@@ -11219,7 +11219,7 @@ a {
 
 .pricing-card.popular .popular-item {
   background: #1abb9c;
-  color: #fff;
+  color: #000;
   font-size: 18px;
   font-weight: 400;
   padding: 7px 0 12px;
@@ -11659,12 +11659,4 @@ img.tower {
     height: 90px !important;
     line-height: 90px !important;
   }
-}
-
-.btn, a{
-  color: #fff;
-}
-
-.btn:hover{
-  color: #f9f9f9;
 }

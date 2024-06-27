@@ -1,4 +1,3 @@
-// smooth scroll
 $(document).ready(function(){
 	$(".nav-link").on('click', function(event) {
 
@@ -16,3 +15,9 @@ $(document).ready(function(){
       	} 
     });
 });
+
+function scrollToSection(event, sectionId) {
+    event.preventDefault();
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+}

@@ -11421,6 +11421,29 @@ textarea {
   z-index: 1;
 }
 
+.header2 {
+  position: relative;
+  min-height: 600px;
+  height: 100%;
+  color: white;
+}
+
+#video-background-half {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que el video cubra todo el contenedor */
+  z-index: -1; /* Coloca el video detrás del contenido */
+  filter: brightness(40%);
+}
+
+.header2-content {
+  position: relative; /* Asegura que el contenido esté sobre el video */
+  z-index: 1;
+}
+
 .header .header-title {
   font-size: 45px;
   font-weight: 300;
@@ -11451,6 +11474,7 @@ textarea {
   background-color: #f8f9fa;
   border-radius: 0.17rem;
   overflow: hidden;
+  filter: brightness(90%);
 }
 
 .header .header-form .head {
@@ -11667,4 +11691,108 @@ img.tower {
     height: 90px !important;
     line-height: 90px !important;
   }
+}
+
+summary{
+  padding: 1em;
+  background-color: #FF9B00;
+  margin-bottom: 1em;
+  cursor: pointer;
+  outline: none;
+  border-radius: .3em;
+  font-weight: bold;
+  transition: background-color .3s;
+
+  &:hover{
+    background-color: #c67800;
+  }
+}
+
+.detailscontent{
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.card-img-top{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+details > summary + div > p {
+  margin-left: 20px;
+}
+
+.s2{
+  margin-bottom: -100px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 10px;
+}
+
+.details-grid details {
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 1200px) {
+  .details-grid {
+      grid-template-columns: repeat(10, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .details-grid {
+      grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .details-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .details-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+.navbar .navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+hr{
+  border-color: #f8f9fa;
+}
+
+footer{
+  margin-top: 100px;
+}
+
+ul {
+  list-style-type: none; /* Elimina los puntos de las listas no ordenadas */
+  padding: 0; /* Elimina el padding por defecto */
+}
+
+li {
+  margin: 5px 0; /* Agrega un margen opcional entre los elementos */
+}
+
+.container, .row, body{
+  overflow-x: hidden;
+}
+
+footer p{
+  color: #FF9B00;
+}
+
+.display-4{
+  text-align: center;
 }

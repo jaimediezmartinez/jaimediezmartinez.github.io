@@ -54,20 +54,6 @@ p {
     color: #333;
 }
 
-.buttons {
-    display: grid; /* Utilizamos grid para organizar los botones */
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas en pantallas grandes */
-    gap: 20px; /* Espaciado entre botones */
-    margin-top: 30px;
-}
-
-/* Media query para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .buttons {
-        grid-template-columns: repeat(2, 1fr); /* Cambiamos a 2 columnas en pantallas pequeñas */
-    }
-}
-
 .button {
     display: inline-block;
     padding: 15px 30px;
@@ -87,4 +73,17 @@ p {
 .button:hover {
     transform: translate(-5px, -5px);
     box-shadow: 10px 10px 0px #333;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .buttons {
+        grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    }
 }

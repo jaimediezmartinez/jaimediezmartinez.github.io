@@ -111,7 +111,8 @@ p {
 
 @media (max-width: 768px) {
     .header {
-        width: 90%; /* Cambiar a 90% para pantallas pequeñas */
+        width: 100%; /* Cambiar a 90% para pantallas pequeñas */
+        padding-top: 40px;
         height: auto; /* Permitir que la altura se ajuste automáticamente */
     }
 
@@ -124,6 +125,7 @@ p {
         padding: 10px; /* Reducir el padding para botones en móviles */
         width: 80%; /* Botones ocupan el 80% del contenedor */
         margin: 5px 0; /* Espaciado entre botones */
+        margin-left: 15px;
     }
 
     h1 {

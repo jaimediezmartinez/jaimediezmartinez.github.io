@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5be49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.header {
+    background-color: white;
+    display: flex; /* Activar flexbox */
+    flex-direction: column; /* Asegurar que el contenido esté en una columna */
+    justify-content: center; /* Centramos el contenido verticalmente */
+    align-items: center; /* Centramos el contenido horizontalmente */
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    min-height: 200px; /* Ajusta la altura mínima según sea necesario */
+    width: 50%; /* Asegúrate de que el ancho no sea del 100% para permitir el centrado */
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+    box-shadow: 10px 10px 0px #333;
+}
+
+.window-buttons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.window-buttons span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.red { background-color: #FF5F56; }
+.yellow { background-color: #f5be49; }
+.green { background-color: #27C93F; }
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #333;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: white;
+    color: black;
+    font-size: 2.0em;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: 100%; /* Cambiamos a 100% para que ocupe el espacio del grid */
+    text-align: center; /* Alineamos el texto dentro del botón */
+}
+
+.button:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 10px 10px 0px #333;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 10px 30px; /* 10px de espacio vertical, 30px de espacio horizontal */
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .buttons {
+        grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    }
+}

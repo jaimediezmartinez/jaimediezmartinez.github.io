@@ -27,7 +27,7 @@ body {
     height: 100vh;
 }
 
-.italic{
+.italic {
     font-family: 'Libre Baskerville', Arial, sans-serif; /* Añade la fuente personalizada */
 }
 
@@ -44,8 +44,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     position: relative;
-    width: 400px; /* Ancho fijo */
-    height: 250px; /* Altura fija */
+    width: 90%; /* Cambiado a 90% para pantallas pequeñas */
+    height: auto; /* Permitir que la altura se ajuste automáticamente */
     margin: 0 auto; /* Centra horizontalmente el contenedor */
     box-shadow: 5px 5px 0px #333;
     border: 2px solid black; /* Añade un borde negro de 2px */
@@ -70,29 +70,29 @@ body {
 .green { background-color: #27C93F; }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.8em; /* Tamaño de fuente más pequeño para h1 */
     margin-bottom: 5px;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1em; /* Reducir el tamaño de fuente en párrafos */
     font-style: italic;
     color: #333;
 }
 
 .button {
     display: inline-block;
-    padding: 15px 30px;
-    margin: 10px;
+    padding: 10px 20px; /* Reducir el padding para botones */
+    margin: 5px 0; /* Espaciado entre botones */
     background-color: white;
     color: black;
-    font-size: 2.0em;
+    font-size: 1.5em; /* Reducir el tamaño de la fuente en móviles */
     font-weight: bold;
     border-radius: 10px;
     box-shadow: 5px 5px 0px #333;
     text-decoration: none;
     transition: all 0.3s ease;
-    width: 100%; /* Cambiamos a 100% para que ocupe el espacio del grid */
+    width: 80%; /* Botones ocupan el 80% del contenedor */
     text-align: center; /* Alineamos el texto dentro del botón */
     border: 2px solid black; /* Añade un borde negro de 2px */
 }
@@ -103,15 +103,35 @@ p {
 }
 
 .buttons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    gap: 10px 30px; /* 10px de espacio vertical, 30px de espacio horizontal */
-    margin-top: 30px;
+    display: flex; /* Cambiar a flexbox para una mejor disposición */
+    flex-direction: column; /* Alinear botones en columna */
+    align-items: center; /* Centrarlos horizontalmente */
+    margin-top: 20px; /* Reducir el margen superior */
 }
 
 @media (max-width: 768px) {
+    .header {
+        width: 90%; /* Cambiar a 90% para pantallas pequeñas */
+        height: auto; /* Permitir que la altura se ajuste automáticamente */
+    }
+
     .buttons {
-        grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+        flex-direction: column; /* Cambiar a columna */
+        align-items: center; /* Centrar botones */
+    }
+
+    .button {
+        width: 80%; /* Botones ocupan el 80% del contenedor */
+        font-size: 1.5em; /* Tamaño de fuente más pequeño */
+        margin: 5px 0; /* Espaciado entre botones */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Tamaño de fuente más pequeño para h1 */
+    }
+
+    p {
+        font-size: 1em; /* Reducir el tamaño de fuente en párrafos */
     }
 }
 

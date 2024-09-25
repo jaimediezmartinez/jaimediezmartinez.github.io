@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'CheGuevaraBarry';
+    src: url('fonts/CheGuevaraBarry-Brown.ttf') format('truetype'); /* Ajusta la ruta según la ubicación */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('fonts/LibreBaskerville-Italic.ttf') format('truetype'); /* Ajusta la ruta según la ubicación */
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +19,16 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'CheGuevaraBarry', Arial, sans-serif; /* Añade la fuente personalizada */
     background-color: #f5be49;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.italic{
+    font-family: 'Libre Baskerville', Arial, sans-serif; /* Añade la fuente personalizada */
 }
 
 .container {
@@ -26,9 +44,11 @@ body {
     padding: 20px;
     border-radius: 10px;
     position: relative;
-    min-height: 200px; /* Ajusta la altura mínima según sea necesario */
-    width: 50%; /* Asegúrate de que el ancho no sea del 100% para permitir el centrado */
+    width: 400px; /* Ancho fijo */
+    height: 250px; /* Altura fija */
     margin: 0 auto; /* Centra horizontalmente el contenedor */
+    box-shadow: 5px 5px 0px #333;
+    border: 2px solid black; /* Añade un borde negro de 2px */
 }
 
 .window-buttons {
@@ -74,6 +94,7 @@ p {
     transition: all 0.3s ease;
     width: 100%; /* Cambiamos a 100% para que ocupe el espacio del grid */
     text-align: center; /* Alineamos el texto dentro del botón */
+    border: 2px solid black; /* Añade un borde negro de 2px */
 }
 
 .button:hover {
@@ -92,4 +113,37 @@ p {
     .buttons {
         grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
     }
+}
+
+/* Añadir al final de tu archivo styles.css */
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #333;
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacio entre los grupos de formulario */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+label {
+    display: block; /* Hacer que el label ocupe todo el ancho */
+    margin-bottom: 5px; /* Espacio entre el label y el input */
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%; /* Ocupa el 100% del contenedor */
+    padding: 10px; /* Espacio dentro del input/textarea */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Color del borde */
+    font-size: 1em; /* Tamaño de fuente */
+}
+
+input:focus, textarea:focus {
+    border-color: #f5be49; /* Color de borde al enfocar */
+    outline: none; /* Sin contorno por defecto */
 }

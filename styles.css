@@ -44,8 +44,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     position: relative;
-    width: 90%; /* Cambiado a 90% para pantallas pequeñas */
-    height: auto; /* Permitir que la altura se ajuste automáticamente */
+    width: 400px; /* Ancho fijo para escritorio */
+    height: 250px; /* Altura fija */
     margin: 0 auto; /* Centra horizontalmente el contenedor */
     box-shadow: 5px 5px 0px #333;
     border: 2px solid black; /* Añade un borde negro de 2px */
@@ -70,29 +70,29 @@ body {
 .green { background-color: #27C93F; }
 
 h1 {
-    font-size: 1.8em; /* Tamaño de fuente más pequeño para h1 */
+    font-size: 2em;
     margin-bottom: 5px;
 }
 
 p {
-    font-size: 1em; /* Reducir el tamaño de fuente en párrafos */
+    font-size: 1.2em;
     font-style: italic;
     color: #333;
 }
 
 .button {
     display: inline-block;
-    padding: 10px 20px; /* Reducir el padding para botones */
-    margin: 5px 0; /* Espaciado entre botones */
+    padding: 15px 30px;
+    margin: 10px;
     background-color: white;
     color: black;
-    font-size: 1.5em; /* Reducir el tamaño de la fuente en móviles */
+    font-size: 2.0em;
     font-weight: bold;
     border-radius: 10px;
     box-shadow: 5px 5px 0px #333;
     text-decoration: none;
     transition: all 0.3s ease;
-    width: 80%; /* Botones ocupan el 80% del contenedor */
+    width: 100%; /* Mantener 100% para pantallas grandes */
     text-align: center; /* Alineamos el texto dentro del botón */
     border: 2px solid black; /* Añade un borde negro de 2px */
 }
@@ -103,10 +103,10 @@ p {
 }
 
 .buttons {
-    display: flex; /* Cambiar a flexbox para una mejor disposición */
-    flex-direction: column; /* Alinear botones en columna */
-    align-items: center; /* Centrarlos horizontalmente */
-    margin-top: 20px; /* Reducir el margen superior */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en escritorio */
+    gap: 10px 30px; /* 10px de espacio vertical, 30px de espacio horizontal */
+    margin-top: 30px;
 }
 
 @media (max-width: 768px) {
@@ -116,13 +116,13 @@ p {
     }
 
     .buttons {
-        flex-direction: column; /* Cambiar a columna */
-        align-items: center; /* Centrar botones */
+        grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
     }
 
     .button {
+        font-size: 1.5em; /* Tamaño de fuente más pequeño para móviles */
+        padding: 10px; /* Reducir el padding para botones en móviles */
         width: 80%; /* Botones ocupan el 80% del contenedor */
-        font-size: 1.5em; /* Tamaño de fuente más pequeño */
         margin: 5px 0; /* Espaciado entre botones */
     }
 
